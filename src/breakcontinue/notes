@@ -1,0 +1,2 @@
+break/continue statements allow us to further manipulate the output of loops
+We can create conditions for a specific iteration of a loop, do something, then break/continue

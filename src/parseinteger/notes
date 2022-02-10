@@ -1,0 +1,3 @@
+Converting a string to an integer is calling 'parsing'
+'parseInt' method is provided by the 'Integer' wrapper class. Ex: Integer.parseInt(string)
+For converting other data types to integer, use 'casting'. Ex: (int)double

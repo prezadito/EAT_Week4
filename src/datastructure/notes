@@ -1,0 +1,58 @@
+When you declare and assign a variable, a space in memory gets created, which has the variable name, data type, and the value assigned to it.
+When you only declare a variable, a space in memory will still get created, but it will have the value part empty.
+
+When you create an array, you must state how big the array will be during declaration, so the program knows how much space in memory to allocate to the array.
+This is inefficient and inconvenient when the size of the array needs to change or if you need to hold a different data type in the array.
+Because in java, you have to explicitly state what data type the array will hold and the length of the array during array declaration.
+When you have unassigned space in memory (unused blocks in an array), the program will fill it with zero, wasting memory.
+To get all the values in an array at one time, use a for loop. Use 'i < array.length' instead of 'i < x' as the termination condition of the parameter.
+To retrieve a single value inside an array, use bracket notation. Ex: array[0];
+
+The Windows OS has 8-10 million lines of code, so to have unnecessary lines of code will only use more memory and make the system slower.
+This is why when you update a program or app, make sure to remove old lines of code that you no longer need, so the program doesn't get bloated over time.
+
+In an array, the length is static; it must be explicitly stated during declaration. It can also hold only one data type.
+
+An ArrayList size is dynamic; the length of an 'ArrayList' is not predefined.
+The ArrayList object uses the '.add()' method to create new blocks in memory and assign them values.
+An ArrayList requires a wrapper class element declaration during its creation. Ex: ArrayList<Integer> numList = new ArrayList<>();
+ArrayLists allows for the addition/storage of many data types; they just need to be converted to the previously given wrapper class.
+Unless you give the 'Object' wrapper class; in that case you can .add() any data types without parsing or casting
+Use '.get()' to retrieve a single value inside an ArrayList. Ex: numList.get(0);
+To find the size of an ArrayList, use the '.size()' method.
+When you need a data structure that will change in size over time, use an ArrayList.
+You can use the 'List' interface to create a new ArrayList class object, which implements the list interface. Ex: List<Integer> numList2 = new ArrayList<>();
+This allows ArrayList to access all the unimplemented/abstract methods in the list interface.
+
+Java_Collection_Framework_Hierarchy.jpg
+Collection interface implements the Iterable interface
+List, Queue, Deque, and Set interfaces implement the Collection interface
+ArrayList* and Vector classes implements List interface
+LinkedList* class implements List, Queue and Dequeue interfaces
+PriorityQueue class implement Queue interface
+ArrayDeque class implement Dequeue interface
+HashSet* and LinkedHashSet classes implement the Set interface
+TreeSet class implements the SortedSet interface, which implements the Set interface
+HashTable and HashMap* classes implement the Map interface
+TreeMap class implements the SortedMap interface, which implements the Map interface
+
+The difference between Set and List: (common interview question)
+While an Array only lets us access one element at a time, Set and Lists allow for us to output the whole data block at once
+List is ordered + can accept duplicates; Set is unordered + do not accept duplicates
+Ordered = the data structure adds the value in the order in which you wrote the code; the list order matters
+Unordered = the data structure is ASCII ordered, regardless of where you wrote the code; the set order doesn't matter
+
+The difference between ArrayList and LinkedList:
+Both are linear data structures, but LinkedList elements are not stored in contiguous locations; every element is separated from the other ones
+LinkedList elements are stored as nodes, with references (pointers) to previous and next nodes
+The 'Head' node's previous reference/address  (pointer) is 'null', and so is the 'Tail' node's next reference/address (pointer)
+ArrayList is represented by a block, divided by data fields
+LinkedList is represented by a chain of nodes, linked by reference addresses (pointers)
+When adding a node to a middle of a LinkedList, the rest of the nodes simply reconfigure their pointers to adjust for the new one
+When adding a block to the middle of an ArrayList, the other blocks have to move to make room for the new one
+
+The two types of non linear data structures are graph and tree
+Graph uses the node/pointer system for linking elements
+Tree uses the hierarchical (left/right, parent/children) system for organizing data
+Graph and Tree data structures are uncommon is the work field; if asked in an interview about them, say you never used them
+You will not need to go outside of ArrayList, HashMap, HashSet, and LinkedList

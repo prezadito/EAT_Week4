@@ -1,0 +1,15 @@
+'switch' statements are like if/else statements
+The 'case' that matches the switch (parameter) will execute
+If no break statement is found after case is matched and executed, it will continue executing all the following case execute statements
+A 'default' case will execute (if written) when no case matches given parameter
+
+Enums are a datatype that allow us to limit values when calling methods that require parameters
+enum is short for enumerate, as in data enumeration (listing the choices you have)
+Enum keywords (choices) are declared in ALL CAPS, separated by commas, with no semicolon needed at the end of statement
+To use an enum list as possible parameters, declare the enums datatype variable by its name, then use the enum name in the argument/parameters
+No need to declare the enum variable, since they are declared in the enum file; they just need to be declared in the class in which to be used
+enums are immutable; they have no reference and thus cannot be changed
+When enums are used, no default case is necessary because you cannot go outside of the enum keyword list, but still a good practice to use anyway
+When you create a class object that has an enum datatype variable declared in it, you can use it by 'class_name.enum_name.keyword'
+
+Right-click package_name > 'New' > Java Class > Enum
