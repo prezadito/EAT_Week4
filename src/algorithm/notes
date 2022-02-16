@@ -1,0 +1,15 @@
+Algorithms are essentially machine logic
+
+Sorting algorithms orders lists/arrays/dbs
+
+Selection sort:
+Starts at index 0, moves rightward and finds the next smallest value, and swaps itself with that index.
+The selection process resumes from the index after the swap, and repeats the process until the whole array is sorted from smallest to highest.
+Once a number is swapped no need to compare it to the element on its left-side because its assumed to be in its rightful place in the order.
+
+Insertion sort:
+Starts at index 1, compares the value of that index with that on its left (array[-1]).
+If the one on the left is bigger, it swaps index with the higher value via a temporary variable.
+The smaller value index is compared with its left-side element to see if its lower than that, and swap places if it is.
+Once that element finds its place in the order, we compare the element where we initially left off +1 and compare it with its left-side element.
+Repeat the process until whole list is ordered.

@@ -1,1 +1,7 @@
 Is Map/HashMap a linear data structure?
+
+A method's scope and for loop's scope is different.
+A for loop that runs will affect both global and local variables used inside it.
+
+Unless a method is called, it won't affect any global variables, even if they are changed inside the method implementation.
+Only create global variables for variables that are used by multiple methods; otherwise keep declare/initialize them locally for readability and memory optimization.
